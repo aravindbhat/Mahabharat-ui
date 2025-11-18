@@ -4,3 +4,7 @@
     background-color: teal;
     color: red;
 }
+p{
+    color: blue;
+    font-language-override: initial;
+}

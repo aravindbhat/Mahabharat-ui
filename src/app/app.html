@@ -1,2 +1,17 @@
 <h1 class="demo">Work in Progress :)</h1>
 <p>Mahabharat UI coming soon...</p>
+
+<hr>
+<br>
+<div 
+style="background-color:chocolate; width: 200px; height:200px;border-radius: 200px; color: aqua;align-items: center; justify-content: center;display: flex;"
+(click)="clickEvent()" (mouseenter)="mouseEnterEvent()" (mouseleave)="mouseLeaveEvent()" 
+>Check Events</div>
+<br>
+<p>SUM: {{a}} + {{b}}={{sum}}</p>
+<input type="number" name="Variable 1" (input)="assignA(valA)" #valA >
+<br>
+<input type="number" name="Variable 2"  (input)="assignB(valB)" #valB>
+<br>
+<button (click)="add(valA.value, valB.value)">SUM</button>
+<button (click)="reset()">Re set</button>
